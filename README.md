@@ -21,6 +21,11 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## Required
+- pnpm https://pnpm.io/installation
+- docker https://docs.docker.com/engine/install/
+- docker-compose https://docs.docker.com/compose/install/
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
@@ -29,6 +34,7 @@
 
 ```bash
 $ pnpm install
+$ docker compose up -d
 ```
 
 ## Compile and run the project
