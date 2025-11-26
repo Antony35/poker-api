@@ -10,8 +10,4 @@ RUN pnpm install
 
 COPY . /app
 
-# RUN npx prisma generate
-
-RUN pnpm run build
-
 CMD ["npm", "run", "start:dev"]
