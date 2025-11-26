@@ -52,7 +52,11 @@ $ pnpm run start:prod
 
 ## Route list
 ### GET
+    -   /login
     -   /tables
+
+### POST
+    -   /register { username: string, password: string }
 
 ## Run tests
 
