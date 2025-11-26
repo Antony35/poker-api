@@ -1,17 +1,18 @@
-db = db.getSiblingDB("poker_db");
+set -e
+
+mongosh <<EOF
+use $MONGO_INITDB_DATABASE
 
 db.createUser({
-    user: "marcel",
-    pwd: "123_soleil",
-    roles: [
-      {
-        role: 'readWrite',
-        db: 'poker_db'
-      },
-    ],
-  });
+  user: '$MONGO_INITDB_USER',
+  pwd: '$MONGO_INITDB_PWD',
+  roles: [{
+    role: 'readWrite',
+    db: '$MONGO_INITDB_DATABASE'
+  }]
+})
 
-db.createCollection("tables_collection");
+db.createCollection("tables_collection")
 
 db.tables_collection.insertMany([
   {
@@ -29,4 +30,6 @@ db.tables_collection.insertMany([
     small_blind: 100,
     big_blind: 200
   }
-]);
+])
+
+EOF
