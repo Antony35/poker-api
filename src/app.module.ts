@@ -2,12 +2,14 @@ import { Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TablesModule } from './tables/tables.module';
 import { MongooseModule } from '@nestjs/mongoose';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
-    ConfigModule.forRoot(),
     MongooseModule.forRoot("mongodb://marcel:123_soleil@localhost:27017/poker_db"),
-    TablesModule
+    ConfigModule.forRoot(),
+    TablesModule,
+    AuthModule,
   ],
 })
 
