@@ -50,6 +50,10 @@ $ pnpm run start:dev
 $ pnpm run start:prod
 ```
 
+## Route list
+### GET
+    -   /tables
+
 ## Run tests
 
 ```bash
