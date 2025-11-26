@@ -11,7 +11,6 @@ export class TablesService {
     @InjectModel(Table.name) private readonly tableModel: Model<ITable>) {}
 
   async findAll(): Promise<ITable[]> {
-    console.log(this.tableModel.find());
     return await this.tableModel.find().exec()
   }
 }
