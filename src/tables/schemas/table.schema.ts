@@ -4,10 +4,10 @@ import { Prop, Schema, SchemaFactory } from '@nestjs/mongoose';
 export class Table {
 
   @Prop({required: true})
-  smallBlind: number;
+  small_blind: number;
 
   @Prop({required: true})
-  bigBling: number;
+  big_blind: number;
 
   @Prop({required: true})
   name: string;
