@@ -9,6 +9,7 @@ import { AuthGuard } from './auth/auth.guard';
 @Module({
   imports: [
     ConfigModule.forRoot(),
+    MongooseModule.forRoot(`mongodb://${process.env.MONGO_INITDB_USER}:${process.env.MONGO_INITDB_PWD}@localhost:27017/${process.env.MONGO_INITDB_DATABASE}`),
     TablesModule,
     AuthModule,
   ],
