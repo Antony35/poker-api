@@ -16,17 +16,17 @@ db.createCollection("tables_collection")
 
 db.tables_collection.insertMany([
   {
-    name: "Noobs",
+    name: "noobs",
     small_blind: 10,
     big_blind: 20
   },
   {
-    name: "Rookies",
+    name: "rookies",
     small_blind: 20,
     big_blind: 40
   },
   {
-    name: "Masters",
+    name: "masters",
     small_blind: 100,
     big_blind: 200
   }

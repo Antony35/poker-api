@@ -1,7 +1,5 @@
-import { Document } from 'mongoose';
-
-export interface ITable extends Document {
-  readonly bigBlind: number;
-  readonly smallBlind: number;
+export interface ITable {
+  readonly big_blind: number;
+  readonly small_blind: number;
   readonly name: string;
 }
